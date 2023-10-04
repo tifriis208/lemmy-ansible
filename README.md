@@ -13,11 +13,12 @@ To run this ansible playbook, you need to:
 
 ## Install
 
-1. Clone this repo:
+1. Clone this repo, and checkout the latest tag
 
    ```
    git clone https://github.com/LemmyNet/lemmy-ansible.git
    cd lemmy-ansible
+   git checkout $(git tag --list '1.[0-9]+.[0-9]+' | tail -n 1)
    ```
 
 2. Make a directory to hold your config:
